@@ -1,0 +1,1436 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "exportedAt": "2026-01-04T06:12:09.815Z",
+    "frameName": "Sign-up Screen",
+    "pluginVersion": "2.0.0"
+  },
+  "canvas": {
+    "width": 375,
+    "height": 800,
+    "backgroundColor": "#ffffff"
+  },
+  "components": [
+    {
+      "id": "1:110",
+      "name": "Rectangle 1",
+      "type": "shape",
+      "figmaType": "RECTANGLE",
+      "x": -15,
+      "y": -24,
+      "width": 405,
+      "height": 841,
+      "semantic": {
+        "role": "button",
+        "interactive": true,
+        "confidence": 0.9,
+        "htmlElement": "button"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "center"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#f0fdf436"
+          }
+        ],
+        "borderRadius": {
+          "topLeft": 0,
+          "topRight": 0,
+          "bottomRight": 0,
+          "bottomLeft": 0
+        }
+      },
+      "asset": "/images/rectangle-1.png",
+      "visible": true
+    },
+    {
+      "id": "1:111",
+      "name": "Group 9",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 35,
+      "y": 97,
+      "width": 187,
+      "height": 53,
+      "semantic": {
+        "role": "button",
+        "interactive": false,
+        "confidence": 0.5,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:112",
+          "name": "Start your healthy journey today.",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 0,
+          "y": 38,
+          "width": 179,
+          "height": 15,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#6c7280"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "Start your healthy journey today.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "color": "#6c7280",
+            "textAlign": "left",
+            "lineHeight": "auto",
+            "letterSpacing": -0.2040000057220459,
+            "textDecoration": "none"
+          },
+          "visible": true
+        },
+        {
+          "id": "1:113",
+          "name": "Create Account",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 0,
+          "y": 0,
+          "width": 187,
+          "height": 30,
+          "semantic": {
+            "role": "button",
+            "interactive": false,
+            "confidence": 0.5,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#202937"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "Create Account",
+            "fontFamily": "Inter",
+            "fontSize": 25,
+            "fontWeight": 700,
+            "color": "#202937",
+            "textAlign": "left",
+            "lineHeight": "auto",
+            "letterSpacing": -0.42500001192092896,
+            "textDecoration": "none"
+          },
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:114",
+      "name": "Full Name",
+      "type": "text",
+      "figmaType": "TEXT",
+      "x": 40,
+      "y": 200,
+      "width": 56,
+      "height": 15,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "left"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#202937"
+          }
+        ]
+      },
+      "textProperties": {
+        "content": "Full Name",
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#202937",
+        "textAlign": "left",
+        "lineHeight": "auto",
+        "letterSpacing": -0.2040000057220459,
+        "textDecoration": "none"
+      },
+      "visible": true
+    },
+    {
+      "id": "1:115",
+      "name": "Email",
+      "type": "text",
+      "figmaType": "TEXT",
+      "x": 40,
+      "y": 275,
+      "width": 31,
+      "height": 15,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "left"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#202937"
+          }
+        ]
+      },
+      "textProperties": {
+        "content": "Email",
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#202937",
+        "textAlign": "left",
+        "lineHeight": "auto",
+        "letterSpacing": -0.2040000057220459,
+        "textDecoration": "none"
+      },
+      "visible": true
+    },
+    {
+      "id": "1:116",
+      "name": "Password",
+      "type": "text",
+      "figmaType": "TEXT",
+      "x": 40,
+      "y": 350,
+      "width": 56,
+      "height": 15,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "left"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#202937"
+          }
+        ]
+      },
+      "textProperties": {
+        "content": "Password",
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#202937",
+        "textAlign": "left",
+        "lineHeight": "auto",
+        "letterSpacing": -0.2040000057220459,
+        "textDecoration": "none"
+      },
+      "visible": true
+    },
+    {
+      "id": "1:117",
+      "name": "Group 7",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 69,
+      "y": 472,
+      "width": 238,
+      "height": 39,
+      "semantic": {
+        "role": "button",
+        "interactive": false,
+        "confidence": 0.5,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:118",
+          "name": "Rectangle 3",
+          "type": "shape",
+          "figmaType": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "width": 238,
+          "height": 39,
+          "semantic": {
+            "role": "button",
+            "interactive": true,
+            "confidence": 0.9,
+            "htmlElement": "button"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#27a44d"
+              }
+            ],
+            "borderRadius": {
+              "topLeft": 10,
+              "topRight": 10,
+              "bottomRight": 10,
+              "bottomLeft": 10
+            }
+          },
+          "asset": "/images/rectangle-3.png",
+          "visible": true
+        },
+        {
+          "id": "1:119",
+          "name": "SIgn-up",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 90,
+          "y": 11,
+          "width": 58,
+          "height": 18,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#ffffff"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "SIgn-up",
+            "fontFamily": "Inter",
+            "fontSize": 15,
+            "fontWeight": 700,
+            "color": "#ffffff",
+            "textAlign": "center",
+            "lineHeight": "auto",
+            "letterSpacing": -0.2550000071525574,
+            "textDecoration": "none"
+          },
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:120",
+      "name": "Group 8",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 100,
+      "y": 536,
+      "width": 176,
+      "height": 15,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:121",
+          "name": "Already have an account? Login",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 0,
+          "y": 0,
+          "width": 176,
+          "height": 15,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "textProperties": {
+            "content": "Already have an account? Login ",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "color": "#000000",
+            "textAlign": "center",
+            "lineHeight": "auto",
+            "letterSpacing": -0.2040000057220459,
+            "textDecoration": "none"
+          },
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:122",
+      "name": "keyboard_arrow_up",
+      "type": "instance",
+      "figmaType": "INSTANCE",
+      "x": 23,
+      "y": 43,
+      "width": 35,
+      "height": 35,
+      "rotation": 90.00000250447808,
+      "semantic": {
+        "role": "list-item",
+        "interactive": false,
+        "confidence": 0.8,
+        "dataBinding": "keyboard_arrow_ups.map((keyboard_arrow_up) => <KeyboardArrowUp {...keyboard_arrow_up} />)",
+        "htmlElement": "li"
+      },
+      "constraints": {
+        "horizontal": "left",
+        "vertical": "left"
+      },
+      "component": {
+        "name": "keyboard_arrow_up",
+        "isInstance": true,
+        "mainComponentId": "1:5",
+        "hasVariants": false
+      },
+      "style": {
+        "borderRadius": {
+          "topLeft": 10,
+          "topRight": 10,
+          "bottomRight": 10,
+          "bottomLeft": 10
+        }
+      },
+      "children": [
+        {
+          "id": "I1:122;57995:3429",
+          "name": "icon",
+          "type": "vector",
+          "figmaType": "VECTOR",
+          "x": 11.67,
+          "y": 8.75,
+          "width": 10.79,
+          "height": 17.5,
+          "semantic": {
+            "role": "icon",
+            "interactive": false,
+            "confidence": 0.9,
+            "htmlElement": "span"
+          },
+          "constraints": {
+            "horizontal": "scale",
+            "vertical": "scale"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#9fa5b0"
+              }
+            ]
+          },
+          "asset": "/images/icon.png",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:123",
+      "name": "Group 10",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 40,
+      "y": 222,
+      "width": 296,
+      "height": 39,
+      "semantic": {
+        "role": "button",
+        "interactive": false,
+        "confidence": 0.5,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:124",
+          "name": "Group 7",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 0,
+          "y": 0,
+          "width": 296,
+          "height": 39,
+          "semantic": {
+            "role": "button",
+            "interactive": false,
+            "confidence": 0.5,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:125",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 296,
+              "height": 39,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#f0fdf4"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#27a44d",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:126",
+              "name": "User",
+              "type": "instance",
+              "figmaType": "INSTANCE",
+              "x": 16,
+              "y": 10,
+              "width": 19,
+              "height": 19,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "left",
+                "vertical": "left"
+              },
+              "component": {
+                "name": "User",
+                "isInstance": true,
+                "mainComponentId": "1:12",
+                "hasVariants": false
+              },
+              "style": {
+                "fills": [],
+                "borderRadius": {
+                  "topLeft": 0,
+                  "topRight": 0,
+                  "bottomRight": 0,
+                  "bottomLeft": 0
+                }
+              },
+              "children": [
+                {
+                  "id": "I1:126;7758:12535",
+                  "name": "Icon",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 3.17,
+                  "y": 2.38,
+                  "width": 12.67,
+                  "height": 14.25,
+                  "semantic": {
+                    "role": "icon",
+                    "interactive": false,
+                    "confidence": 0.9,
+                    "htmlElement": "span"
+                  },
+                  "constraints": {
+                    "horizontal": "scale",
+                    "vertical": "scale"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#27a44d",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/icon.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            },
+            {
+              "id": "1:127",
+              "name": "Hussain Shah",
+              "type": "text",
+              "figmaType": "TEXT",
+              "x": 43,
+              "y": 12,
+              "width": 224,
+              "height": 16,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#27a44d"
+                  }
+                ]
+              },
+              "textProperties": {
+                "content": "Hussain Shah",
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fontWeight": 400,
+                "color": "#27a44d",
+                "textAlign": "left",
+                "lineHeight": "auto",
+                "letterSpacing": -0.22100000619888305,
+                "textDecoration": "none"
+              },
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:128",
+      "name": "Group 11",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 40,
+      "y": 297,
+      "width": 296,
+      "height": 39,
+      "semantic": {
+        "role": "button",
+        "interactive": false,
+        "confidence": 0.5,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:129",
+          "name": "Group 7",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 0,
+          "y": 0,
+          "width": 296,
+          "height": 39,
+          "semantic": {
+            "role": "button",
+            "interactive": false,
+            "confidence": 0.5,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:130",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 296,
+              "height": 39,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#f0fdf4"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#27a44d",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:131",
+              "name": "Mail",
+              "type": "instance",
+              "figmaType": "INSTANCE",
+              "x": 17,
+              "y": 11,
+              "width": 17,
+              "height": 17,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "left",
+                "vertical": "left"
+              },
+              "component": {
+                "name": "Size=48",
+                "isInstance": true,
+                "mainComponentId": "1:23",
+                "variants": {
+                  "Size": "48"
+                },
+                "hasVariants": true
+              },
+              "style": {
+                "fills": [],
+                "borderRadius": {
+                  "topLeft": 0,
+                  "topRight": 0,
+                  "bottomRight": 0,
+                  "bottomLeft": 0
+                }
+              },
+              "children": [
+                {
+                  "id": "I1:131;7758:11846",
+                  "name": "Icon",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 1.42,
+                  "y": 2.83,
+                  "width": 14.17,
+                  "height": 11.33,
+                  "semantic": {
+                    "role": "icon",
+                    "interactive": false,
+                    "confidence": 0.9,
+                    "htmlElement": "span"
+                  },
+                  "constraints": {
+                    "horizontal": "scale",
+                    "vertical": "scale"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#27a44d",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/icon.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            },
+            {
+              "id": "1:132",
+              "name": "user@example.com",
+              "type": "text",
+              "figmaType": "TEXT",
+              "x": 43,
+              "y": 12,
+              "width": 224,
+              "height": 16,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#27a44d"
+                  }
+                ]
+              },
+              "textProperties": {
+                "content": "user@example.com",
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fontWeight": 400,
+                "color": "#27a44d",
+                "textAlign": "left",
+                "lineHeight": "auto",
+                "letterSpacing": -0.22100000619888305,
+                "textDecoration": "none"
+              },
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:133",
+      "name": "Group 12",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 40,
+      "y": 372,
+      "width": 296,
+      "height": 39,
+      "semantic": {
+        "role": "button",
+        "interactive": false,
+        "confidence": 0.5,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:134",
+          "name": "Group 7",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 0,
+          "y": 0,
+          "width": 296,
+          "height": 39,
+          "semantic": {
+            "role": "button",
+            "interactive": false,
+            "confidence": 0.5,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:135",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 296,
+              "height": 39,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#f0fdf4"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#27a44d",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:136",
+              "name": "Lock",
+              "type": "instance",
+              "figmaType": "INSTANCE",
+              "x": 18,
+              "y": 12,
+              "width": 16,
+              "height": 16,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "left",
+                "vertical": "left"
+              },
+              "component": {
+                "name": "Lock",
+                "isInstance": true,
+                "mainComponentId": "1:35",
+                "hasVariants": false
+              },
+              "style": {
+                "fills": [],
+                "borderRadius": {
+                  "topLeft": 0,
+                  "topRight": 0,
+                  "bottomRight": 0,
+                  "bottomLeft": 0
+                }
+              },
+              "children": [
+                {
+                  "id": "I1:136;7758:11824",
+                  "name": "Icon",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 2,
+                  "y": 1.33,
+                  "width": 12,
+                  "height": 13.33,
+                  "semantic": {
+                    "role": "icon",
+                    "interactive": false,
+                    "confidence": 0.9,
+                    "htmlElement": "span"
+                  },
+                  "constraints": {
+                    "horizontal": "scale",
+                    "vertical": "scale"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#27a44d",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/icon.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            },
+            {
+              "id": "1:137",
+              "name": "Mail",
+              "type": "instance",
+              "figmaType": "INSTANCE",
+              "x": 17,
+              "y": 11,
+              "width": 17,
+              "height": 17,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "left",
+                "vertical": "left"
+              },
+              "component": {
+                "name": "Size=48",
+                "isInstance": true,
+                "mainComponentId": "1:23",
+                "variants": {
+                  "Size": "48"
+                },
+                "hasVariants": true
+              },
+              "style": {
+                "fills": [],
+                "borderRadius": {
+                  "topLeft": 0,
+                  "topRight": 0,
+                  "bottomRight": 0,
+                  "bottomLeft": 0
+                }
+              },
+              "visible": true
+            },
+            {
+              "id": "1:138",
+              "name": "********",
+              "type": "text",
+              "figmaType": "TEXT",
+              "x": 43,
+              "y": 14,
+              "width": 224,
+              "height": 18,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#27a44d"
+                  }
+                ]
+              },
+              "textProperties": {
+                "content": "********",
+                "fontFamily": "Inter",
+                "fontSize": 15,
+                "fontWeight": 400,
+                "color": "#27a44d",
+                "textAlign": "left",
+                "lineHeight": "auto",
+                "letterSpacing": -0.2550000071525574,
+                "textDecoration": "none"
+              },
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:139",
+      "name": "Group 24",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": -3,
+      "y": 757,
+      "width": 381,
+      "height": 43,
+      "semantic": {
+        "role": "input",
+        "interactive": false,
+        "confidence": 0.4,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:140",
+          "name": "Rectangle 8",
+          "type": "shape",
+          "figmaType": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "width": 381,
+          "height": 43,
+          "semantic": {
+            "role": "button",
+            "interactive": true,
+            "confidence": 0.9,
+            "htmlElement": "button"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#f9f9f9"
+              }
+            ],
+            "borderRadius": {
+              "topLeft": 0,
+              "topRight": 0,
+              "bottomRight": 0,
+              "bottomLeft": 0
+            }
+          },
+          "asset": "/images/rectangle-8.png",
+          "visible": true
+        },
+        {
+          "id": "1:141",
+          "name": "Group 23",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 75,
+          "y": 14,
+          "width": 232,
+          "height": 15,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:142",
+              "name": "Vector 1",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 225,
+              "y": 1,
+              "width": 7,
+              "height": 14,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "left",
+                "vertical": "left"
+              },
+              "style": {
+                "stroke": {
+                  "color": "#6b6b6b",
+                  "width": 1.5,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/vector-1.png",
+              "visible": true
+            },
+            {
+              "id": "1:143",
+              "name": "Rectangle 9",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 111,
+              "y": 0,
+              "width": 15,
+              "height": 15,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "left",
+                "vertical": "left"
+              },
+              "style": {
+                "borderRadius": {
+                  "topLeft": 5.5,
+                  "topRight": 5.5,
+                  "bottomRight": 5.5,
+                  "bottomLeft": 5.5
+                },
+                "stroke": {
+                  "color": "#6b6b6b",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-9.png",
+              "visible": true
+            },
+            {
+              "id": "1:144",
+              "name": "Group 22",
+              "type": "group",
+              "figmaType": "GROUP",
+              "x": 0,
+              "y": 1,
+              "width": 12,
+              "height": 14,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "children": [
+                {
+                  "id": "1:145",
+                  "name": "Vector 2",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 14,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#6b6b6b",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/vector-2.png",
+                  "visible": true
+                },
+                {
+                  "id": "1:146",
+                  "name": "Vector 3",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 6,
+                  "y": 0,
+                  "width": 0,
+                  "height": 14,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#6b6b6b",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/vector-3.png",
+                  "visible": true
+                },
+                {
+                  "id": "1:147",
+                  "name": "Vector 4",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 12,
+                  "y": 0,
+                  "width": 0,
+                  "height": 14,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#6b6b6b",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/vector-4.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/images/rectangle-1.png",
+      "originalName": "rectangle-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/icon.png",
+      "originalName": "icon.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/icon.png",
+      "originalName": "icon.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/icon.png",
+      "originalName": "icon.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/icon.png",
+      "originalName": "icon.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-8.png",
+      "originalName": "rectangle-8.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector-1.png",
+      "originalName": "vector-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-9.png",
+      "originalName": "rectangle-9.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector-2.png",
+      "originalName": "vector-2.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector-3.png",
+      "originalName": "vector-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector-4.png",
+      "originalName": "vector-4.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    }
+  ]
+}

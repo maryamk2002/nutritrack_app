@@ -1,0 +1,2107 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "exportedAt": "2026-01-04T06:12:25.015Z",
+    "frameName": "Add Meal",
+    "pluginVersion": "2.0.0"
+  },
+  "canvas": {
+    "width": 375,
+    "height": 800,
+    "backgroundColor": "#ffffff"
+  },
+  "components": [
+    {
+      "id": "1:226",
+      "name": "Rectangle 1",
+      "type": "shape",
+      "figmaType": "RECTANGLE",
+      "x": -15,
+      "y": -24,
+      "width": 405,
+      "height": 841,
+      "semantic": {
+        "role": "button",
+        "interactive": true,
+        "confidence": 0.9,
+        "htmlElement": "button"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "center"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#f0fdf436"
+          }
+        ],
+        "borderRadius": {
+          "topLeft": 0,
+          "topRight": 0,
+          "bottomRight": 0,
+          "bottomLeft": 0
+        }
+      },
+      "asset": "/images/rectangle-1.png",
+      "visible": true
+    },
+    {
+      "id": "1:227",
+      "name": "Group 34",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 35,
+      "y": 97,
+      "width": 305,
+      "height": 146,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:228",
+          "name": "Group 27",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 0,
+          "y": 0,
+          "width": 145,
+          "height": 66,
+          "semantic": {
+            "role": "list-item",
+            "interactive": false,
+            "confidence": 0.7,
+            "dataBinding": "group s.map((group ) => <Group {...group } />)",
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:229",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 145,
+              "height": 66,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#dbf6e4"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#27a44d",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:230",
+              "name": "Group 26",
+              "type": "group",
+              "figmaType": "GROUP",
+              "x": 17,
+              "y": 18,
+              "width": 112,
+              "height": 31,
+              "semantic": {
+                "role": "button",
+                "interactive": false,
+                "confidence": 0.5,
+                "htmlElement": "div"
+              },
+              "children": [
+                {
+                  "id": "1:231",
+                  "name": "Breakfast",
+                  "type": "text",
+                  "figmaType": "TEXT",
+                  "x": 46,
+                  "y": 8,
+                  "width": 66,
+                  "height": 16,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "center",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "fills": [
+                      {
+                        "type": "solid",
+                        "color": "#32a550"
+                      }
+                    ]
+                  },
+                  "textProperties": {
+                    "content": "Breakfast",
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fontWeight": 600,
+                    "color": "#32a550",
+                    "textAlign": "left",
+                    "lineHeight": "auto",
+                    "letterSpacing": -0.22100000619888305,
+                    "textDecoration": "none"
+                  },
+                  "visible": true
+                },
+                {
+                  "id": "1:232",
+                  "name": "croissant 1",
+                  "type": "shape",
+                  "figmaType": "RECTANGLE",
+                  "x": 0,
+                  "y": 0,
+                  "width": 31,
+                  "height": 31,
+                  "semantic": {
+                    "role": "icon",
+                    "interactive": false,
+                    "confidence": 0.6,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "fills": [
+                      {
+                        "type": "image"
+                      }
+                    ],
+                    "borderRadius": {
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomRight": 0,
+                      "bottomLeft": 0
+                    }
+                  },
+                  "asset": "/images/croissant-1.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            }
+          ],
+          "visible": true
+        },
+        {
+          "id": "1:233",
+          "name": "Group 28",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 160,
+          "y": 0,
+          "width": 145,
+          "height": 66,
+          "semantic": {
+            "role": "list-item",
+            "interactive": false,
+            "confidence": 0.7,
+            "dataBinding": "group s.map((group ) => <Group {...group } />)",
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:234",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 145,
+              "height": 66,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#f3f3f375"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#394150",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:235",
+              "name": "Group 26",
+              "type": "group",
+              "figmaType": "GROUP",
+              "x": 17,
+              "y": 18,
+              "width": 112,
+              "height": 31,
+              "semantic": {
+                "role": "button",
+                "interactive": false,
+                "confidence": 0.5,
+                "htmlElement": "div"
+              },
+              "children": [
+                {
+                  "id": "1:236",
+                  "name": "Lunch",
+                  "type": "text",
+                  "figmaType": "TEXT",
+                  "x": 46,
+                  "y": 8,
+                  "width": 66,
+                  "height": 16,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "center",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "fills": [
+                      {
+                        "type": "solid",
+                        "color": "#384151"
+                      }
+                    ]
+                  },
+                  "textProperties": {
+                    "content": "Lunch",
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fontWeight": 600,
+                    "color": "#384151",
+                    "textAlign": "left",
+                    "lineHeight": "auto",
+                    "letterSpacing": -0.22100000619888305,
+                    "textDecoration": "none"
+                  },
+                  "visible": true
+                },
+                {
+                  "id": "1:237",
+                  "name": "croissant 1",
+                  "type": "shape",
+                  "figmaType": "RECTANGLE",
+                  "x": 0,
+                  "y": 0,
+                  "width": 31,
+                  "height": 31,
+                  "semantic": {
+                    "role": "icon",
+                    "interactive": false,
+                    "confidence": 0.6,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "fills": [
+                      {
+                        "type": "image"
+                      }
+                    ],
+                    "borderRadius": {
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomRight": 0,
+                      "bottomLeft": 0
+                    }
+                  },
+                  "asset": "/images/croissant-1.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            }
+          ],
+          "visible": true
+        },
+        {
+          "id": "1:238",
+          "name": "Group 31",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 160,
+          "y": 80,
+          "width": 145,
+          "height": 66,
+          "semantic": {
+            "role": "list-item",
+            "interactive": false,
+            "confidence": 0.7,
+            "dataBinding": "group s.map((group ) => <Group {...group } />)",
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:239",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 145,
+              "height": 66,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#f3f3f375"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#394150",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:240",
+              "name": "Group 26",
+              "type": "group",
+              "figmaType": "GROUP",
+              "x": 17,
+              "y": 18,
+              "width": 112,
+              "height": 31,
+              "semantic": {
+                "role": "button",
+                "interactive": false,
+                "confidence": 0.5,
+                "htmlElement": "div"
+              },
+              "children": [
+                {
+                  "id": "1:241",
+                  "name": "Snack",
+                  "type": "text",
+                  "figmaType": "TEXT",
+                  "x": 46,
+                  "y": 8,
+                  "width": 66,
+                  "height": 16,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "center",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "fills": [
+                      {
+                        "type": "solid",
+                        "color": "#384151"
+                      }
+                    ]
+                  },
+                  "textProperties": {
+                    "content": "Snack",
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fontWeight": 600,
+                    "color": "#384151",
+                    "textAlign": "left",
+                    "lineHeight": "auto",
+                    "letterSpacing": -0.22100000619888305,
+                    "textDecoration": "none"
+                  },
+                  "visible": true
+                },
+                {
+                  "id": "1:242",
+                  "name": "croissant 1",
+                  "type": "shape",
+                  "figmaType": "RECTANGLE",
+                  "x": 0,
+                  "y": 0,
+                  "width": 31,
+                  "height": 31,
+                  "semantic": {
+                    "role": "icon",
+                    "interactive": false,
+                    "confidence": 0.6,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "fills": [
+                      {
+                        "type": "image"
+                      }
+                    ],
+                    "borderRadius": {
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomRight": 0,
+                      "bottomLeft": 0
+                    }
+                  },
+                  "asset": "/images/croissant-1.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            }
+          ],
+          "visible": true
+        },
+        {
+          "id": "1:243",
+          "name": "Group 32",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 0,
+          "y": 80,
+          "width": 145,
+          "height": 66,
+          "semantic": {
+            "role": "list-item",
+            "interactive": false,
+            "confidence": 0.7,
+            "dataBinding": "group s.map((group ) => <Group {...group } />)",
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:244",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 145,
+              "height": 66,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#f3f3f375"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#394150",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:245",
+              "name": "Group 26",
+              "type": "group",
+              "figmaType": "GROUP",
+              "x": 17,
+              "y": 18,
+              "width": 112,
+              "height": 31,
+              "semantic": {
+                "role": "button",
+                "interactive": false,
+                "confidence": 0.5,
+                "htmlElement": "div"
+              },
+              "children": [
+                {
+                  "id": "1:246",
+                  "name": "Dinner",
+                  "type": "text",
+                  "figmaType": "TEXT",
+                  "x": 46,
+                  "y": 8,
+                  "width": 66,
+                  "height": 16,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "center",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "fills": [
+                      {
+                        "type": "solid",
+                        "color": "#384151"
+                      }
+                    ]
+                  },
+                  "textProperties": {
+                    "content": "Dinner",
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fontWeight": 600,
+                    "color": "#384151",
+                    "textAlign": "left",
+                    "lineHeight": "auto",
+                    "letterSpacing": -0.22100000619888305,
+                    "textDecoration": "none"
+                  },
+                  "visible": true
+                },
+                {
+                  "id": "1:247",
+                  "name": "croissant 1",
+                  "type": "shape",
+                  "figmaType": "RECTANGLE",
+                  "x": 0,
+                  "y": 0,
+                  "width": 31,
+                  "height": 31,
+                  "semantic": {
+                    "role": "icon",
+                    "interactive": false,
+                    "confidence": 0.6,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "fills": [
+                      {
+                        "type": "image"
+                      }
+                    ],
+                    "borderRadius": {
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomRight": 0,
+                      "bottomLeft": 0
+                    }
+                  },
+                  "asset": "/images/croissant-1.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:248",
+      "name": "Rectangle 7",
+      "type": "shape",
+      "figmaType": "RECTANGLE",
+      "x": -14,
+      "y": 698,
+      "width": 405,
+      "height": 102,
+      "semantic": {
+        "role": "button",
+        "interactive": true,
+        "confidence": 0.9,
+        "htmlElement": "button"
+      },
+      "constraints": {
+        "horizontal": "left",
+        "vertical": "left"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#ffffff"
+          }
+        ],
+        "borderRadius": {
+          "topLeft": 0,
+          "topRight": 0,
+          "bottomRight": 0,
+          "bottomLeft": 0
+        },
+        "shadows": [
+          {
+            "type": "drop",
+            "color": "#00000026",
+            "offsetX": 0,
+            "offsetY": -2,
+            "blur": 10,
+            "spread": 0
+          }
+        ]
+      },
+      "asset": "/images/rectangle-7.png",
+      "visible": true
+    },
+    {
+      "id": "1:489",
+      "name": "Group 45",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 59,
+      "y": 711,
+      "width": 32,
+      "height": 37,
+      "semantic": {
+        "role": "icon",
+        "interactive": false,
+        "confidence": 0.6,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:250",
+          "name": "Home",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 0,
+          "y": 25,
+          "width": 32,
+          "height": 12,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#adadad"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "Home",
+            "fontFamily": "Inter",
+            "fontSize": 10,
+            "fontWeight": 500,
+            "color": "#adadad",
+            "textAlign": "center",
+            "lineHeight": "auto",
+            "letterSpacing": -0.17000000476837157,
+            "textDecoration": "none"
+          },
+          "visible": true
+        },
+        {
+          "id": "1:254",
+          "name": "image 8",
+          "type": "shape",
+          "figmaType": "RECTANGLE",
+          "x": 5,
+          "y": 0,
+          "width": 22,
+          "height": 22,
+          "semantic": {
+            "role": "image",
+            "interactive": false,
+            "confidence": 0.85,
+            "htmlElement": "img"
+          },
+          "constraints": {
+            "horizontal": "left",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "image"
+              }
+            ],
+            "borderRadius": {
+              "topLeft": 0,
+              "topRight": 0,
+              "bottomRight": 0,
+              "bottomLeft": 0
+            }
+          },
+          "asset": "/images/image-8.png",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:491",
+      "name": "Group 47",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 189,
+      "y": 715,
+      "width": 54,
+      "height": 33,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:252",
+          "name": "Summary",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 0,
+          "y": 21,
+          "width": 54,
+          "height": 12,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#adadad"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "Summary",
+            "fontFamily": "Inter",
+            "fontSize": 10,
+            "fontWeight": 500,
+            "color": "#adadad",
+            "textAlign": "center",
+            "lineHeight": "auto",
+            "letterSpacing": -0.17000000476837157,
+            "textDecoration": "none"
+          },
+          "visible": true
+        },
+        {
+          "id": "1:255",
+          "name": "detail 101 1",
+          "type": "shape",
+          "figmaType": "RECTANGLE",
+          "x": 17,
+          "y": 0,
+          "width": 20,
+          "height": 14,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "left",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "image"
+              }
+            ],
+            "borderRadius": {
+              "topLeft": 0,
+              "topRight": 0,
+              "bottomRight": 0,
+              "bottomLeft": 0
+            }
+          },
+          "asset": "/images/detail-101-1.png",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:492",
+      "name": "Group 48",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 273,
+      "y": 711,
+      "width": 44,
+      "height": 37,
+      "semantic": {
+        "role": "icon",
+        "interactive": false,
+        "confidence": 0.6,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:253",
+          "name": "Progress",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 0,
+          "y": 25,
+          "width": 44,
+          "height": 12,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#adadad"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "Progress",
+            "fontFamily": "Inter",
+            "fontSize": 10,
+            "fontWeight": 500,
+            "color": "#adadad",
+            "textAlign": "center",
+            "lineHeight": "auto",
+            "letterSpacing": -0.17000000476837157,
+            "textDecoration": "none"
+          },
+          "visible": true
+        },
+        {
+          "id": "1:256",
+          "name": "image 9",
+          "type": "shape",
+          "figmaType": "RECTANGLE",
+          "x": 11,
+          "y": 0,
+          "width": 22,
+          "height": 22,
+          "semantic": {
+            "role": "image",
+            "interactive": false,
+            "confidence": 0.85,
+            "htmlElement": "img"
+          },
+          "constraints": {
+            "horizontal": "left",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "image"
+              }
+            ],
+            "borderRadius": {
+              "topLeft": 0,
+              "topRight": 0,
+              "bottomRight": 0,
+              "bottomLeft": 0
+            }
+          },
+          "asset": "/images/image-9.png",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:490",
+      "name": "Group 46",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 129,
+      "y": 711,
+      "width": 40,
+      "height": 37,
+      "semantic": {
+        "role": "icon",
+        "interactive": false,
+        "confidence": 0.6,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:251",
+          "name": "Add",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 0,
+          "y": 25,
+          "width": 40,
+          "height": 12,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#32a550"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "Add",
+            "fontFamily": "Inter",
+            "fontSize": 10,
+            "fontWeight": 700,
+            "color": "#32a550",
+            "textAlign": "center",
+            "lineHeight": "auto",
+            "letterSpacing": -0.17000000476837157,
+            "textDecoration": "none"
+          },
+          "visible": true
+        },
+        {
+          "id": "1:257",
+          "name": "image 6",
+          "type": "shape",
+          "figmaType": "RECTANGLE",
+          "x": 10,
+          "y": 0,
+          "width": 22,
+          "height": 22,
+          "semantic": {
+            "role": "image",
+            "interactive": false,
+            "confidence": 0.85,
+            "htmlElement": "img"
+          },
+          "constraints": {
+            "horizontal": "left",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "image"
+              }
+            ],
+            "borderRadius": {
+              "topLeft": 0,
+              "topRight": 0,
+              "bottomRight": 0,
+              "bottomLeft": 0
+            }
+          },
+          "asset": "/images/image-6.png",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:258",
+      "name": "Group 24",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": -3,
+      "y": 757,
+      "width": 381,
+      "height": 43,
+      "semantic": {
+        "role": "input",
+        "interactive": false,
+        "confidence": 0.4,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:259",
+          "name": "Rectangle 8",
+          "type": "shape",
+          "figmaType": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "width": 381,
+          "height": 43,
+          "semantic": {
+            "role": "button",
+            "interactive": true,
+            "confidence": 0.9,
+            "htmlElement": "button"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#f9f9f9"
+              }
+            ],
+            "borderRadius": {
+              "topLeft": 0,
+              "topRight": 0,
+              "bottomRight": 0,
+              "bottomLeft": 0
+            }
+          },
+          "asset": "/images/rectangle-8.png",
+          "visible": true
+        },
+        {
+          "id": "1:260",
+          "name": "Group 23",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 75,
+          "y": 14,
+          "width": 232,
+          "height": 15,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:261",
+              "name": "Vector 1",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 225,
+              "y": 1,
+              "width": 7,
+              "height": 14,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "left",
+                "vertical": "left"
+              },
+              "style": {
+                "stroke": {
+                  "color": "#6b6b6b",
+                  "width": 1.5,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/vector-1.png",
+              "visible": true
+            },
+            {
+              "id": "1:262",
+              "name": "Rectangle 9",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 111,
+              "y": 0,
+              "width": 15,
+              "height": 15,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "left",
+                "vertical": "left"
+              },
+              "style": {
+                "borderRadius": {
+                  "topLeft": 5.5,
+                  "topRight": 5.5,
+                  "bottomRight": 5.5,
+                  "bottomLeft": 5.5
+                },
+                "stroke": {
+                  "color": "#6b6b6b",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-9.png",
+              "visible": true
+            },
+            {
+              "id": "1:263",
+              "name": "Group 22",
+              "type": "group",
+              "figmaType": "GROUP",
+              "x": 0,
+              "y": 1,
+              "width": 12,
+              "height": 14,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "children": [
+                {
+                  "id": "1:264",
+                  "name": "Vector 2",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 14,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#6b6b6b",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/vector-2.png",
+                  "visible": true
+                },
+                {
+                  "id": "1:265",
+                  "name": "Vector 3",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 6,
+                  "y": 0,
+                  "width": 0,
+                  "height": 14,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#6b6b6b",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/vector-3.png",
+                  "visible": true
+                },
+                {
+                  "id": "1:266",
+                  "name": "Vector 4",
+                  "type": "vector",
+                  "figmaType": "VECTOR",
+                  "x": 12,
+                  "y": 0,
+                  "width": 0,
+                  "height": 14,
+                  "semantic": {
+                    "role": "container",
+                    "interactive": false,
+                    "confidence": 0.3,
+                    "htmlElement": "div"
+                  },
+                  "constraints": {
+                    "horizontal": "left",
+                    "vertical": "left"
+                  },
+                  "style": {
+                    "stroke": {
+                      "color": "#6b6b6b",
+                      "width": 1.5,
+                      "style": "solid"
+                    }
+                  },
+                  "asset": "/images/vector-4.png",
+                  "visible": true
+                }
+              ],
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:267",
+      "name": "keyboard_arrow_up",
+      "type": "instance",
+      "figmaType": "INSTANCE",
+      "x": 23,
+      "y": 43,
+      "width": 35,
+      "height": 35,
+      "rotation": 90.00000250447808,
+      "semantic": {
+        "role": "list-item",
+        "interactive": false,
+        "confidence": 0.8,
+        "dataBinding": "keyboard_arrow_ups.map((keyboard_arrow_up) => <KeyboardArrowUp {...keyboard_arrow_up} />)",
+        "htmlElement": "li"
+      },
+      "constraints": {
+        "horizontal": "left",
+        "vertical": "left"
+      },
+      "component": {
+        "name": "keyboard_arrow_up",
+        "isInstance": true,
+        "mainComponentId": "1:5",
+        "hasVariants": false
+      },
+      "style": {
+        "borderRadius": {
+          "topLeft": 10,
+          "topRight": 10,
+          "bottomRight": 10,
+          "bottomLeft": 10
+        }
+      },
+      "children": [
+        {
+          "id": "I1:267;57995:3429",
+          "name": "icon",
+          "type": "vector",
+          "figmaType": "VECTOR",
+          "x": 11.67,
+          "y": 8.75,
+          "width": 10.79,
+          "height": 17.5,
+          "semantic": {
+            "role": "icon",
+            "interactive": false,
+            "confidence": 0.9,
+            "htmlElement": "span"
+          },
+          "constraints": {
+            "horizontal": "scale",
+            "vertical": "scale"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#9fa5b0"
+              }
+            ]
+          },
+          "asset": "/images/icon.png",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:268",
+      "name": "Group 9",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 63,
+      "y": 49,
+      "width": 90,
+      "height": 24,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:269",
+          "name": "Add Meal",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 0,
+          "y": 0,
+          "width": 90,
+          "height": 24,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#202937"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "Add Meal",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 700,
+            "color": "#202937",
+            "textAlign": "left",
+            "lineHeight": "auto",
+            "letterSpacing": -0.34000000953674314,
+            "textDecoration": "none"
+          },
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:270",
+      "name": "Food Name",
+      "type": "text",
+      "figmaType": "TEXT",
+      "x": 40,
+      "y": 272,
+      "width": 64,
+      "height": 15,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "left"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#202937"
+          }
+        ]
+      },
+      "textProperties": {
+        "content": "Food Name",
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#202937",
+        "textAlign": "left",
+        "lineHeight": "auto",
+        "letterSpacing": -0.2040000057220459,
+        "textDecoration": "none"
+      },
+      "visible": true
+    },
+    {
+      "id": "1:271",
+      "name": "Calories",
+      "type": "text",
+      "figmaType": "TEXT",
+      "x": 40,
+      "y": 355,
+      "width": 47,
+      "height": 15,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "left"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#202937"
+          }
+        ]
+      },
+      "textProperties": {
+        "content": "Calories",
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#202937",
+        "textAlign": "left",
+        "lineHeight": "auto",
+        "letterSpacing": -0.2040000057220459,
+        "textDecoration": "none"
+      },
+      "visible": true
+    },
+    {
+      "id": "1:272",
+      "name": "Group 10",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 35,
+      "y": 294,
+      "width": 305,
+      "height": 47,
+      "semantic": {
+        "role": "input",
+        "interactive": false,
+        "confidence": 0.4,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:273",
+          "name": "Group 7",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 47,
+          "semantic": {
+            "role": "input",
+            "interactive": false,
+            "confidence": 0.4,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:274",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 305,
+              "height": 47,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#fbfbfb"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#e4e4e4",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:275",
+              "name": "e.g.. Avocado Toast",
+              "type": "text",
+              "figmaType": "TEXT",
+              "x": 20,
+              "y": 14,
+              "width": 255,
+              "height": 20,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#cdcdcd"
+                  }
+                ]
+              },
+              "textProperties": {
+                "content": "e.g.. Avocado Toast",
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fontWeight": 400,
+                "color": "#cdcdcd",
+                "textAlign": "left",
+                "lineHeight": "auto",
+                "letterSpacing": -0.22100000619888305,
+                "textDecoration": "none"
+              },
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:276",
+      "name": "Group 33",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 35,
+      "y": 377,
+      "width": 305,
+      "height": 47,
+      "semantic": {
+        "role": "input",
+        "interactive": false,
+        "confidence": 0.4,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:277",
+          "name": "Group 7",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 47,
+          "semantic": {
+            "role": "input",
+            "interactive": false,
+            "confidence": 0.4,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:278",
+              "name": "Rectangle 3",
+              "type": "shape",
+              "figmaType": "RECTANGLE",
+              "x": 0,
+              "y": 0,
+              "width": 305,
+              "height": 47,
+              "semantic": {
+                "role": "button",
+                "interactive": true,
+                "confidence": 0.9,
+                "htmlElement": "button"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#fbfbfb"
+                  }
+                ],
+                "borderRadius": {
+                  "topLeft": 10,
+                  "topRight": 10,
+                  "bottomRight": 10,
+                  "bottomLeft": 10
+                },
+                "stroke": {
+                  "color": "#e4e4e4",
+                  "width": 1,
+                  "style": "solid"
+                }
+              },
+              "asset": "/images/rectangle-3.png",
+              "visible": true
+            },
+            {
+              "id": "1:279",
+              "name": "0",
+              "type": "text",
+              "figmaType": "TEXT",
+              "x": 20,
+              "y": 14,
+              "width": 58,
+              "height": 20,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#cdcdcd"
+                  }
+                ]
+              },
+              "textProperties": {
+                "content": "0",
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fontWeight": 400,
+                "color": "#cdcdcd",
+                "textAlign": "left",
+                "lineHeight": "auto",
+                "letterSpacing": -0.22100000619888305,
+                "textDecoration": "none"
+              },
+              "visible": true
+            },
+            {
+              "id": "1:280",
+              "name": "Kcal",
+              "type": "text",
+              "figmaType": "TEXT",
+              "x": 221,
+              "y": 14,
+              "width": 58,
+              "height": 20,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "center",
+                "vertical": "left"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#a3a3a3cc"
+                  }
+                ]
+              },
+              "textProperties": {
+                "content": "Kcal",
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fontWeight": 400,
+                "color": "#a3a3a3",
+                "textAlign": "right",
+                "lineHeight": "auto",
+                "letterSpacing": -0.22100000619888305,
+                "textDecoration": "none"
+              },
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:281",
+      "name": "Group 7",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 36,
+      "y": 453,
+      "width": 304,
+      "height": 39,
+      "semantic": {
+        "role": "input",
+        "interactive": false,
+        "confidence": 0.4,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:282",
+          "name": "Rectangle 3",
+          "type": "shape",
+          "figmaType": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "width": 304,
+          "height": 39,
+          "semantic": {
+            "role": "button",
+            "interactive": true,
+            "confidence": 0.9,
+            "htmlElement": "button"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#27a44d"
+              }
+            ],
+            "borderRadius": {
+              "topLeft": 10,
+              "topRight": 10,
+              "bottomRight": 10,
+              "bottomLeft": 10
+            }
+          },
+          "asset": "/images/rectangle-3.png",
+          "visible": true
+        },
+        {
+          "id": "1:283",
+          "name": "Save Meal",
+          "type": "text",
+          "figmaType": "TEXT",
+          "x": 114.96,
+          "y": 11,
+          "width": 74.08,
+          "height": 18,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "constraints": {
+            "horizontal": "center",
+            "vertical": "left"
+          },
+          "style": {
+            "fills": [
+              {
+                "type": "solid",
+                "color": "#ffffff"
+              }
+            ]
+          },
+          "textProperties": {
+            "content": "Save Meal",
+            "fontFamily": "Inter",
+            "fontSize": 15,
+            "fontWeight": 700,
+            "color": "#ffffff",
+            "textAlign": "center",
+            "lineHeight": "auto",
+            "letterSpacing": -0.2550000071525574,
+            "textDecoration": "none"
+          },
+          "visible": true
+        }
+      ],
+      "visible": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/images/rectangle-1.png",
+      "originalName": "rectangle-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/croissant-1.png",
+      "originalName": "croissant-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/croissant-1.png",
+      "originalName": "croissant-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/croissant-1.png",
+      "originalName": "croissant-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/croissant-1.png",
+      "originalName": "croissant-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-7.png",
+      "originalName": "rectangle-7.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/image-8.png",
+      "originalName": "image-8.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/detail-101-1.png",
+      "originalName": "detail-101-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/image-9.png",
+      "originalName": "image-9.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/image-6.png",
+      "originalName": "image-6.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-8.png",
+      "originalName": "rectangle-8.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector-1.png",
+      "originalName": "vector-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-9.png",
+      "originalName": "rectangle-9.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector-2.png",
+      "originalName": "vector-2.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector-3.png",
+      "originalName": "vector-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector-4.png",
+      "originalName": "vector-4.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/icon.png",
+      "originalName": "icon.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-3.png",
+      "originalName": "rectangle-3.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    }
+  ]
+}

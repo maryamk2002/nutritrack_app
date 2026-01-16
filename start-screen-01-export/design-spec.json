@@ -1,0 +1,641 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "exportedAt": "2026-01-04T06:11:41.741Z",
+    "frameName": "Start Screen 01",
+    "pluginVersion": "2.0.0"
+  },
+  "canvas": {
+    "width": 375,
+    "height": 800,
+    "backgroundColor": "#26313d"
+  },
+  "components": [
+    {
+      "id": "1:53",
+      "name": "Rectangle 1",
+      "type": "shape",
+      "figmaType": "RECTANGLE",
+      "x": -7,
+      "y": -2,
+      "width": 391,
+      "height": 804,
+      "semantic": {
+        "role": "button",
+        "interactive": true,
+        "confidence": 0.9,
+        "htmlElement": "button"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "center"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#005219"
+          }
+        ],
+        "borderRadius": {
+          "topLeft": 0,
+          "topRight": 0,
+          "bottomRight": 0,
+          "bottomLeft": 0
+        }
+      },
+      "asset": "/images/rectangle-1.png",
+      "visible": true
+    },
+    {
+      "id": "1:54",
+      "name": "Group 2",
+      "type": "group",
+      "figmaType": "GROUP",
+      "x": 115.14,
+      "y": 316,
+      "width": 144,
+      "height": 93.38,
+      "semantic": {
+        "role": "container",
+        "interactive": false,
+        "confidence": 0.3,
+        "htmlElement": "div"
+      },
+      "children": [
+        {
+          "id": "1:55",
+          "name": "Group 5",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 42.66,
+          "y": 0,
+          "width": 58.51,
+          "height": 62.66,
+          "semantic": {
+            "role": "avatar",
+            "interactive": false,
+            "confidence": 0.5,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:56",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 0,
+              "y": 6.32,
+              "width": 58.51,
+              "height": 56.34,
+              "semantic": {
+                "role": "avatar",
+                "interactive": false,
+                "confidence": 0.5,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:57",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 13.37,
+              "y": 2.62,
+              "width": 39.63,
+              "height": 37.05,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:58",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 27.36,
+              "y": 0,
+              "width": 11.6,
+              "height": 11.13,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            }
+          ],
+          "visible": true
+        },
+        {
+          "id": "1:59",
+          "name": "Group 6",
+          "type": "group",
+          "figmaType": "GROUP",
+          "x": 0,
+          "y": 69.2,
+          "width": 144,
+          "height": 24.18,
+          "semantic": {
+            "role": "container",
+            "interactive": false,
+            "confidence": 0.3,
+            "htmlElement": "div"
+          },
+          "children": [
+            {
+              "id": "1:60",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 0,
+              "y": 1.44,
+              "width": 20.72,
+              "height": 22.42,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:61",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 23.5,
+              "y": 6.71,
+              "width": 16.5,
+              "height": 17.46,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:62",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 41.99,
+              "y": 3.08,
+              "width": 12.4,
+              "height": 21.09,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:63",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 56.03,
+              "y": 6.4,
+              "width": 11.61,
+              "height": 17.47,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:64",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 68.72,
+              "y": 0.01,
+              "width": 5.3,
+              "height": 23.86,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:65",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 75.33,
+              "y": 1.44,
+              "width": 17.51,
+              "height": 22.42,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:66",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 88.76,
+              "y": 6.75,
+              "width": 10.08,
+              "height": 17.12,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:67",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 98.84,
+              "y": 6.78,
+              "width": 14.05,
+              "height": 17.39,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:68",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 115.41,
+              "y": 6.75,
+              "width": 12.66,
+              "height": 17.42,
+              "semantic": {
+                "role": "icon",
+                "interactive": false,
+                "confidence": 0.6,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            },
+            {
+              "id": "1:69",
+              "name": "Vector",
+              "type": "vector",
+              "figmaType": "VECTOR",
+              "x": 129.99,
+              "y": 0,
+              "width": 14.01,
+              "height": 23.86,
+              "semantic": {
+                "role": "container",
+                "interactive": false,
+                "confidence": 0.3,
+                "htmlElement": "div"
+              },
+              "constraints": {
+                "horizontal": "scale",
+                "vertical": "scale"
+              },
+              "style": {
+                "fills": [
+                  {
+                    "type": "solid",
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              "asset": "/images/vector.png",
+              "visible": true
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "1:70",
+      "name": "Rectangle 2",
+      "type": "shape",
+      "figmaType": "RECTANGLE",
+      "x": 132,
+      "y": 428,
+      "width": 110,
+      "height": 4,
+      "semantic": {
+        "role": "button",
+        "interactive": true,
+        "confidence": 0.9,
+        "htmlElement": "button"
+      },
+      "constraints": {
+        "horizontal": "center",
+        "vertical": "center"
+      },
+      "style": {
+        "fills": [
+          {
+            "type": "solid",
+            "color": "#27a44d"
+          }
+        ],
+        "borderRadius": {
+          "topLeft": 24,
+          "topRight": 24,
+          "bottomRight": 24,
+          "bottomLeft": 24
+        }
+      },
+      "asset": "/images/rectangle-2.png",
+      "visible": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/images/rectangle-1.png",
+      "originalName": "rectangle-1.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/vector.png",
+      "originalName": "vector.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "path": "/images/rectangle-2.png",
+      "originalName": "rectangle-2.png",
+      "type": "image",
+      "width": 0,
+      "height": 0
+    }
+  ]
+}
