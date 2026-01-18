@@ -8,9 +8,11 @@ import '../screens/login_screen.dart';
 import '../screens/signup_screen.dart';
 import '../screens/dashboard_screen.dart';
 import '../screens/add_meal_screen.dart';
+import '../screens/edit_meal_screen.dart';
 import '../screens/progress_screen.dart';
 import '../screens/summary_screen.dart';
 import '../widgets/bottom_nav_shell.dart';
+import '../models/meal.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) {
   final isAuthenticated = ref.watch(isAuthenticatedProvider);
@@ -121,6 +123,15 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             pageBuilder: (context, state) => const NoTransitionPage(
               child: SummaryScreen(),
             ),
+          ),
+          GoRoute(
+            path: '/edit-meal',
+            pageBuilder: (context, state) {
+              final meal = state.extra as Meal;
+              return NoTransitionPage(
+                child: EditMealScreen(meal: meal),
+              );
+            },
           ),
           GoRoute(
             path: '/progress',

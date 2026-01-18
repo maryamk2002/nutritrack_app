@@ -126,7 +126,7 @@ class AppTheme {
           color: AppColors.placeholder,
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: Colors.white,
         elevation: 0,
         shape: RoundedRectangleBorder(

@@ -40,12 +40,12 @@ class BottomNavShell extends StatelessWidget {
     return Scaffold(
       body: child,
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
           boxShadow: [
             BoxShadow(
               color: AppColors.shadow,
-              offset: const Offset(0, -2),
+              offset: Offset(0, -2),
               blurRadius: 10,
             ),
           ],

@@ -53,8 +53,13 @@ class DashboardScreen extends ConsumerWidget {
                     ],
                   ),
                   GestureDetector(
-                    onTap: () {
-                      ref.read(authProvider.notifier).logout();
+                    onTap: () async {
+                      // Logout user (meals are preserved)
+                      await ref.read(authProvider.notifier).logout();
+                      // Navigate to start screen
+                      if (context.mounted) {
+                        context.go('/');
+                      }
                     },
                     child: Container(
                       width: 44,
@@ -263,6 +268,12 @@ class DashboardScreen extends ConsumerWidget {
                     type: type,
                     meals: typeMeals,
                     onAddMeal: () => context.go('/add-meal'),
+                    onDeleteMeal: (mealId) async {
+                      await ref.read(mealProvider.notifier).removeMeal(mealId);
+                    },
+                    onEditMeal: (meal) {
+                      context.go('/edit-meal', extra: meal);
+                    },
                   ),
                 );
               }),
@@ -284,7 +295,7 @@ class DashboardScreen extends ConsumerWidget {
                         color: AppColors.textMuted.withOpacity(0.5),
                       ),
                       const SizedBox(height: 16),
-                      Text(
+                      const Text(
                         'No meals logged today',
                         style: TextStyle(
                           fontSize: 16,

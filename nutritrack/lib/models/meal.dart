@@ -75,5 +75,34 @@ class Meal {
       date: date ?? this.date,
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'type': type.name,
+      'calories': calories,
+      'protein': protein,
+      'carbs': carbs,
+      'fat': fat,
+      'date': date.toIso8601String(),
+    };
+  }
+
+  factory Meal.fromJson(Map<String, dynamic> json) {
+    return Meal(
+      id: json['id'] as String,
+      name: json['name'] as String,
+      type: MealType.values.firstWhere(
+        (e) => e.name == json['type'],
+        orElse: () => MealType.breakfast,
+      ),
+      calories: json['calories'] as int,
+      protein: (json['protein'] as num).toDouble(),
+      carbs: (json['carbs'] as num).toDouble(),
+      fat: (json['fat'] as num).toDouble(),
+      date: DateTime.parse(json['date'] as String),
+    );
+  }
 }
 

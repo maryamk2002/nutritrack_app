@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../theme/app_colors.dart';
 import '../providers/auth_provider.dart';
+import '../providers/meal_provider.dart';
 import '../widgets/app_text_field.dart';
 import '../widgets/primary_button.dart';
 
@@ -39,7 +40,20 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
           );
 
       if (success && mounted) {
-        context.go('/dashboard');
+        // Load meals for the logged-in user
+        await ref.read(mealProvider.notifier).loadMealsForUser();
+        if (mounted) {
+          context.go('/dashboard');
+        }
+      } else if (!success && mounted) {
+        // Show error message for failed login
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Email not found or incorrect password. Please sign up first.'),
+            backgroundColor: AppColors.accentRed,
+            duration: Duration(seconds: 3),
+          ),
+        );
       }
     } finally {
       if (mounted) {

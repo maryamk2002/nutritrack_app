@@ -9,21 +9,34 @@ import '../widgets/app_text_field.dart';
 import '../widgets/primary_button.dart';
 import '../widgets/meal_type_selector.dart';
 
-class AddMealScreen extends ConsumerStatefulWidget {
-  const AddMealScreen({super.key});
+class EditMealScreen extends ConsumerStatefulWidget {
+  final Meal meal;
+
+  const EditMealScreen({super.key, required this.meal});
 
   @override
-  ConsumerState<AddMealScreen> createState() => _AddMealScreenState();
+  ConsumerState<EditMealScreen> createState() => _EditMealScreenState();
 }
 
-class _AddMealScreenState extends ConsumerState<AddMealScreen> {
+class _EditMealScreenState extends ConsumerState<EditMealScreen> {
   final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _caloriesController = TextEditingController();
-  final _proteinController = TextEditingController();
-  final _carbsController = TextEditingController();
-  final _fatController = TextEditingController();
-  MealType? _selectedType = MealType.breakfast;
+  late TextEditingController _nameController;
+  late TextEditingController _caloriesController;
+  late TextEditingController _proteinController;
+  late TextEditingController _carbsController;
+  late TextEditingController _fatController;
+  late MealType _selectedType;
+
+  @override
+  void initState() {
+    super.initState();
+    _nameController = TextEditingController(text: widget.meal.name);
+    _caloriesController = TextEditingController(text: widget.meal.calories.toString());
+    _proteinController = TextEditingController(text: widget.meal.protein.toString());
+    _carbsController = TextEditingController(text: widget.meal.carbs.toString());
+    _fatController = TextEditingController(text: widget.meal.fat.toString());
+    _selectedType = widget.meal.type;
+  }
 
   @override
   void dispose() {
@@ -37,50 +50,28 @@ class _AddMealScreenState extends ConsumerState<AddMealScreen> {
 
   Future<void> _handleSaveMeal() async {
     if (!_formKey.currentState!.validate()) return;
-    if (_selectedType == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please select a meal type'),
-          backgroundColor: AppColors.accentRed,
-        ),
-      );
-      return;
-    }
 
-    final meal = Meal(
-      id: DateTime.now().millisecondsSinceEpoch.toString(),
+    final updatedMeal = widget.meal.copyWith(
       name: _nameController.text.trim(),
-      type: _selectedType!,
+      type: _selectedType,
       calories: int.parse(_caloriesController.text),
       protein: double.tryParse(_proteinController.text) ?? 0,
       carbs: double.tryParse(_carbsController.text) ?? 0,
       fat: double.tryParse(_fatController.text) ?? 0,
-      date: DateTime.now(),
     );
 
-    await ref.read(mealProvider.notifier).addMeal(meal);
+    await ref.read(mealProvider.notifier).updateMeal(updatedMeal);
 
     if (!mounted) return;
 
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
-        content: Text('Meal added successfully!'),
+        content: Text('Meal updated successfully!'),
         backgroundColor: AppColors.primary,
       ),
     );
 
-    // Clear form
-    _nameController.clear();
-    _caloriesController.clear();
-    _proteinController.clear();
-    _carbsController.clear();
-    _fatController.clear();
-    setState(() {
-      _selectedType = MealType.breakfast;
-    });
-
-    // Navigate to dashboard
-    context.go('/dashboard');
+    context.go('/summary');
   }
 
   @override
@@ -100,7 +91,7 @@ class _AddMealScreenState extends ConsumerState<AddMealScreen> {
                 Row(
                   children: [
                     GestureDetector(
-                      onTap: () => context.go('/dashboard'),
+                      onTap: () => context.go('/summary'),
                       child: Container(
                         width: 40,
                         height: 40,
@@ -118,7 +109,7 @@ class _AddMealScreenState extends ConsumerState<AddMealScreen> {
                     ),
                     const SizedBox(width: 16),
                     const Text(
-                      'Add Meal',
+                      'Edit Meal',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -276,7 +267,7 @@ class _AddMealScreenState extends ConsumerState<AddMealScreen> {
 
                 // Save Button
                 PrimaryButton(
-                  text: 'Save Meal',
+                  text: 'Update Meal',
                   onPressed: _handleSaveMeal,
                   height: 50,
                 ),
@@ -289,4 +280,3 @@ class _AddMealScreenState extends ConsumerState<AddMealScreen> {
     );
   }
 }
-

@@ -6,12 +6,14 @@ class MealCard extends StatelessWidget {
   final Meal meal;
   final VoidCallback? onTap;
   final VoidCallback? onDelete;
+  final VoidCallback? onEdit;
 
   const MealCard({
     super.key,
     required this.meal,
     this.onTap,
     this.onDelete,
+    this.onEdit,
   });
 
   @override
@@ -19,6 +21,29 @@ class MealCard extends StatelessWidget {
     return Dismissible(
       key: Key(meal.id),
       direction: DismissDirection.endToStart,
+      confirmDismiss: (_) async {
+        // Show confirmation dialog before deleting
+        return await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: const Text('Delete Meal'),
+            content: const Text('Are you sure you want to delete this meal?'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context, false),
+                child: const Text('Cancel'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.pop(context, true),
+                child: const Text(
+                  'Delete',
+                  style: TextStyle(color: AppColors.accentRed),
+                ),
+              ),
+            ],
+          ),
+        ) ?? false;
+      },
       onDismissed: (_) => onDelete?.call(),
       background: Container(
         alignment: Alignment.centerRight,
@@ -98,6 +123,19 @@ class MealCard extends StatelessWidget {
                       color: AppColors.textMuted,
                     ),
                   ),
+                  if (onEdit != null) ...[const SizedBox(height: 4),
+                  GestureDetector(
+                    onTap: onEdit,
+                    child: const Text(
+                      'Edit',
+                      style: TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.primary,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  )],
                 ],
               ),
             ],
@@ -112,12 +150,16 @@ class MealTypeGroup extends StatelessWidget {
   final MealType type;
   final List<Meal> meals;
   final VoidCallback? onAddMeal;
+  final Function(String mealId)? onDeleteMeal;
+  final Function(Meal meal)? onEditMeal;
 
   const MealTypeGroup({
     super.key,
     required this.type,
     required this.meals,
     this.onAddMeal,
+    this.onDeleteMeal,
+    this.onEditMeal,
   });
 
   int get totalCalories => meals.fold(0, (sum, meal) => sum + meal.calories);
@@ -182,7 +224,15 @@ class MealTypeGroup extends StatelessWidget {
           const SizedBox(height: 12),
           ...meals.map((meal) => Padding(
             padding: const EdgeInsets.only(bottom: 8),
-            child: MealCard(meal: meal),
+            child: MealCard(
+              meal: meal,
+              onDelete: onDeleteMeal != null
+                  ? () => onDeleteMeal!(meal.id)
+                  : null,
+              onEdit: onEditMeal != null
+                  ? () => onEditMeal!(meal)
+                  : null,
+            ),
           )),
         ],
       ],

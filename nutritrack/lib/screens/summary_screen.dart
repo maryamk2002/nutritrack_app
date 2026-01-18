@@ -336,7 +336,7 @@ class _MacroProgressBar extends StatelessWidget {
             ),
             Text(
               '${current.toInt()}g / ${goal.toInt()}g',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 12,
                 color: AppColors.textMuted,
               ),
@@ -407,7 +407,7 @@ class _MealTypeSummaryCard extends StatelessWidget {
                 const SizedBox(height: 2),
                 Text(
                   '$mealCount ${mealCount == 1 ? 'item' : 'items'}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 12,
                     color: AppColors.textMuted,
                   ),
@@ -426,7 +426,7 @@ class _MealTypeSummaryCard extends StatelessWidget {
                   color: AppColors.primary,
                 ),
               ),
-              Text(
+              const Text(
                 'kcal',
                 style: TextStyle(
                   fontSize: 10,

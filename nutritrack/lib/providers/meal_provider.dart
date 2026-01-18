@@ -1,55 +1,98 @@
+import 'dart:convert';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/meal.dart';
 import '../models/nutrition_data.dart';
+import '../models/user.dart';
+import 'auth_provider.dart';
 
 class MealNotifier extends StateNotifier<List<Meal>> {
-  MealNotifier() : super(_sampleMeals);
+  MealNotifier(this.ref) : super([]) {
+    _loadMeals();
+  }
 
-  static final List<Meal> _sampleMeals = [
-    Meal(
-      id: '1',
-      name: 'Avocado Toast',
-      type: MealType.breakfast,
-      calories: 350,
-      protein: 12,
-      carbs: 30,
-      fat: 22,
-      date: DateTime.now(),
-    ),
-    Meal(
-      id: '2',
-      name: 'Greek Yogurt',
-      type: MealType.breakfast,
-      calories: 150,
-      protein: 15,
-      carbs: 12,
-      fat: 5,
-      date: DateTime.now(),
-    ),
-    Meal(
-      id: '3',
-      name: 'Grilled Chicken Salad',
-      type: MealType.lunch,
-      calories: 420,
-      protein: 35,
-      carbs: 15,
-      fat: 18,
-      date: DateTime.now(),
-    ),
-  ];
+  final Ref ref;
 
-  void addMeal(Meal meal) {
+  String? get _currentUserId => ref.read(authProvider)?.id;
+
+  Future<void> _loadMeals() async {
+    if (_currentUserId == null) {
+      state = [];
+      return;
+    }
+
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final mealsKey = 'meals_$_currentUserId';
+      final mealsJson = prefs.getString(mealsKey);
+      
+      if (mealsJson != null) {
+        final List<dynamic> mealsList = jsonDecode(mealsJson);
+        state = mealsList.map((json) => Meal.fromJson(json as Map<String, dynamic>)).toList();
+      } else {
+        state = [];
+      }
+    } catch (e) {
+      state = [];
+    }
+  }
+
+  Future<void> _saveMeals() async {
+    if (_currentUserId == null) return;
+
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final mealsKey = 'meals_$_currentUserId';
+      final mealsJson = jsonEncode(state.map((meal) => meal.toJson()).toList());
+      await prefs.setString(mealsKey, mealsJson);
+    } catch (e) {
+      // Handle error silently
+    }
+  }
+
+  Future<void> loadMealsForUser() async {
+    // Reload meals for the current user
+    await _loadMeals();
+  }
+  
+
+  Future<void> clearMeals() async {
+    if (_currentUserId == null) {
+      state = [];
+      return;
+    }
+
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final mealsKey = 'meals_$_currentUserId';
+      await prefs.remove(mealsKey);
+      state = [];
+    } catch (e) {
+      state = [];
+    }
+  }
+
+  Future<void> addMeal(Meal meal) async {
+    if (_currentUserId == null) return;
+    
     state = [...state, meal];
+    await _saveMeals();
   }
 
-  void removeMeal(String id) {
+  Future<void> removeMeal(String id) async {
+    if (_currentUserId == null) return;
+
     state = state.where((meal) => meal.id != id).toList();
+    await _saveMeals();
   }
 
-  void updateMeal(Meal updatedMeal) {
+  Future<void> updateMeal(Meal updatedMeal) async {
+    if (_currentUserId == null) return;
+
     state = state.map((meal) => 
       meal.id == updatedMeal.id ? updatedMeal : meal
     ).toList();
+    await _saveMeals();
   }
 
   List<Meal> getMealsForDate(DateTime date) {
@@ -72,7 +115,23 @@ class MealNotifier extends StateNotifier<List<Meal>> {
 }
 
 final mealProvider = StateNotifierProvider<MealNotifier, List<Meal>>((ref) {
-  return MealNotifier();
+  final mealNotifier = MealNotifier(ref);
+  
+  // Watch auth state and reload meals when user changes
+  ref.listen<AppUser?>(authProvider, (previous, next) {
+    if (previous?.id != next?.id) {
+      // User changed - reload meals for new user or clear if logged out
+      if (next == null) {
+        // User logged out - clear meals
+        mealNotifier.clearMeals();
+      } else {
+        // User logged in - load their meals
+        mealNotifier.loadMealsForUser();
+      }
+    }
+  });
+  
+  return mealNotifier;
 });
 
 final todayMealsProvider = Provider<List<Meal>>((ref) {
@@ -87,6 +146,7 @@ final todayMealsProvider = Provider<List<Meal>>((ref) {
 
 final nutritionDataProvider = Provider<NutritionData>((ref) {
   final meals = ref.watch(todayMealsProvider);
+  final user = ref.watch(authProvider);
   
   int calories = 0;
   double protein = 0;
@@ -102,9 +162,13 @@ final nutritionDataProvider = Provider<NutritionData>((ref) {
 
   return NutritionData(
     caloriesConsumed: calories,
+    caloriesGoal: user?.calorieGoal ?? 2000,
     proteinConsumed: protein,
+    proteinGoal: user?.proteinGoal ?? 150.0,
     carbsConsumed: carbs,
+    carbsGoal: user?.carbsGoal ?? 250.0,
     fatConsumed: fat,
+    fatGoal: user?.fatGoal ?? 65.0,
   );
 });
 

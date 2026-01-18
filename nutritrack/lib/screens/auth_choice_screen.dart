@@ -54,7 +54,7 @@ class AuthChoiceScreen extends StatelessWidget {
                 Container(
                   width: 180,
                   height: 180,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: AppColors.primaryLight,
                     shape: BoxShape.circle,
                   ),

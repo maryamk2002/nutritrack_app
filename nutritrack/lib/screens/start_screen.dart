@@ -135,18 +135,18 @@ class _StartScreenState extends State<StartScreen>
                 // Features
                 FadeTransition(
                   opacity: _fadeAnimation,
-                  child: Column(
+                  child: const Column(
                     children: [
                       _FeatureItem(
                         icon: Icons.pie_chart_outline,
                         text: 'Track calories & macros effortlessly',
                       ),
-                      const SizedBox(height: 16),
+                      SizedBox(height: 16),
                       _FeatureItem(
                         icon: Icons.trending_up,
                         text: 'Monitor your progress over time',
                       ),
-                      const SizedBox(height: 16),
+                      SizedBox(height: 16),
                       _FeatureItem(
                         icon: Icons.restaurant_outlined,
                         text: 'Log meals in seconds',

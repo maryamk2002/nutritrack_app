@@ -33,13 +33,13 @@ class ProgressScreen extends ConsumerWidget {
                 ),
               ),
               const SizedBox(height: 8),
-              Text(
-                'Track your weekly nutrition trends',
-                style: TextStyle(
-                  fontSize: 14,
-                  color: AppColors.textSecondary.withOpacity(0.8),
-                ),
-              ),
+               Text(
+                 'Track your weekly nutrition trends',
+                 style: TextStyle(
+                   fontSize: 14,
+                   color: AppColors.textSecondary.withOpacity(0.8),
+                 ),
+               ),
               const SizedBox(height: 32),
 
               // Weekly Calories Chart
@@ -78,7 +78,6 @@ class ProgressScreen extends ConsumerWidget {
                           barTouchData: BarTouchData(
                             enabled: true,
                             touchTooltipData: BarTouchTooltipData(
-                              getTooltipColor: (_) => AppColors.textPrimary,
                               getTooltipItem: (group, groupIndex, rod, rodIndex) {
                                 final progress = weeklyProgress[group.x.toInt()];
                                 return BarTooltipItem(
@@ -141,7 +140,7 @@ class ProgressScreen extends ConsumerWidget {
                             show: true,
                             drawVerticalLine: false,
                             horizontalInterval: 500,
-                            getDrawingHorizontalLine: (value) => FlLine(
+                            getDrawingHorizontalLine: (value) => const FlLine(
                               color: AppColors.border,
                               strokeWidth: 1,
                             ),
@@ -335,7 +334,7 @@ class _MacroCircle extends StatelessWidget {
           size: 80,
           strokeWidth: 8,
           progressColor: color,
-          backgroundColor: color.withOpacity(0.2),
+          backgroundColor: color.withOpacity(0.15),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -362,7 +361,7 @@ class _MacroCircle extends StatelessWidget {
         const SizedBox(height: 4),
         Text(
           '${goal.toInt()}g goal',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 11,
             color: AppColors.textMuted,
           ),
@@ -409,7 +408,7 @@ class _StatCard extends StatelessWidget {
             width: 40,
             height: 40,
             decoration: BoxDecoration(
-              color: color.withOpacity(0.1),
+               color: color.withOpacity(0.1),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Icon(icon, color: color, size: 22),
@@ -417,7 +416,7 @@ class _StatCard extends StatelessWidget {
           const SizedBox(height: 12),
           Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 12,
               color: AppColors.textMuted,
             ),
@@ -439,7 +438,7 @@ class _StatCard extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 3),
                 child: Text(
                   unit,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 12,
                     color: AppColors.textMuted,
                   ),
