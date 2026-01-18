@@ -27,13 +27,15 @@ jobs:
 
     - name: Get dependencies
       run: flutter pub get
+      working-directory: nutritrack
 
     - name: Build APK
       run: flutter build apk --release --split-per-abi
+      working-directory: nutritrack
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: apk-build
-        path: build/app/outputs/apk/release/
+        path: nutritrack/build/app/outputs/apk/release/
         retention-days: 30
