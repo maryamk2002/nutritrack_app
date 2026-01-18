@@ -11,7 +11,6 @@ class AppTheme {
         primary: AppColors.primary,
         secondary: AppColors.primaryLight,
         surface: AppColors.background,
-        background: AppColors.background,
       ),
       scaffoldBackgroundColor: AppColors.background,
       textTheme: GoogleFonts.interTextTheme().copyWith(
