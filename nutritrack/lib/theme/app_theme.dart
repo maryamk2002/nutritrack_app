@@ -127,7 +127,7 @@ class AppTheme {
         ),
       ),
       cardTheme: CardThemeData(
-        color: Colors.white,
+        surfaceTintColor: Colors.white,
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
