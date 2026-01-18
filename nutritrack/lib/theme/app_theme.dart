@@ -125,15 +125,13 @@ class AppTheme {
           color: AppColors.placeholder,
         ),
       ),
-      cardTheme: CardThemeData(
+     cardTheme: CardThemeData( // Use CardThemeData here
         surfaceTintColor: Colors.white,
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
-          side: const BorderSide(color: AppColors.border),
-        ),
-      ),
-    );
+        ), // Close RoundedRectangleBorder
+      ), // Close CardThemeData
+    ); // Close ThemeData
   }
 }
-
